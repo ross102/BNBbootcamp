@@ -49,7 +49,7 @@ contract DogeContract {
         
         myTransaction.amount = amount;
         myTransaction.receiver = receiver;
-        payments[msg.sender].push(myTransaction);
+        payments[receiver].push(myTransaction);
 
         emit Transfer(receiver, amount);
     } 
